@@ -1,0 +1,8 @@
+com\harishtest\merchantdetails\merchantcompany\MerchantDataServiceImplTest.class
+com\harishtest\merchantdetails\merchantcompany\datamapper\TestObjectMapper.class
+META-INF\spring-configuration-metadata.json
+com\harishtest\merchantdetails\merchantcompany\businessservice\GetMerchantImplTests.class
+com\harishtest\merchantdetails\merchantcompany\dbfunctions\UserRepositoryImplTest.class
+com\harishtest\merchantdetails\merchantcompany\MerchantRestControllerTest.class
+com\harishtest\merchantdetails\merchantcompany\datamapper\MerchantMapperTest.class
+com\harishtest\merchantdetails\merchantcompany\businessservice\AddMerchantdataImplTest.class

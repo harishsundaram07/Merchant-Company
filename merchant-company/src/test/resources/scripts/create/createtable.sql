@@ -1,0 +1,21 @@
+CREATE TABLE Merchant.MERCHANTRECORDS (
+    MerchantID varchar(30) NOT NULL,
+    LastName varchar(25),
+    FirstName varchar(25),
+    AddressLine1 varchar(50),
+	AddressLine2 varchar(50),
+    Phoneno varchar(13),
+	Pincode varchar(6),
+	EmailId varchar(50),
+	CreateDateTime TIMESTAMP NOT NULL,
+	BANKAccountNumber varchar(50),
+	CITY varchar(50),
+	STATE varchar(50),
+	COUNTRY varchar(50),
+	PHONETYPE varchar(50),
+	DOB varchar(50),
+	BANKNAME varchar(50),
+	IFSC varchar(50),
+	ACCHOLDERNAME varchar(50),
+	PRIMARY KEY(MerchantID)
+);

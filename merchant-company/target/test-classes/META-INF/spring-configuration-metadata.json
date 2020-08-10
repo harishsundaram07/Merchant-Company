@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "test.filepath",
+      "type": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper",
+      "sourceType": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper"
+    }
+  ],
+  "properties": [
+    {
+      "name": "test.filepath.merchants-file-name",
+      "type": "java.lang.String",
+      "sourceType": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper"
+    },
+    {
+      "name": "test.filepath.request-file-name",
+      "type": "java.lang.String",
+      "sourceType": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper"
+    },
+    {
+      "name": "test.filepath.response-all-file-name",
+      "type": "java.lang.String",
+      "sourceType": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper"
+    },
+    {
+      "name": "test.filepath.response-file-name",
+      "type": "java.lang.String",
+      "sourceType": "com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper"
+    }
+  ],
+  "hints": []
+}
