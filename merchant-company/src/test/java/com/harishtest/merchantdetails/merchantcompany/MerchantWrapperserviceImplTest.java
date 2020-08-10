@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 
 import com.harishtest.merchantdetails.merchantcompany.app.AddMerchant;
 import com.harishtest.merchantdetails.merchantcompany.app.GetMerchant;
+import com.harishtest.merchantdetails.merchantcompany.app.MerchantWrapperservice;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse;
@@ -22,7 +23,7 @@ import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse
 
 @RunWith(MockitoJUnitRunner.class)
 @SpringBootTest
-class MerchantDataServiceImplTest {
+class MerchantWrapperserviceImplTest {
 	
 	@Mock
 	GetMerchant merchantservice;
@@ -31,7 +32,7 @@ class MerchantDataServiceImplTest {
 	@Mock
 	AddMerchant addmerchant;
 	@InjectMocks
-	MerchantDataServiceImpl service;
+	MerchantWrapperservice service;
 	@Autowired
 	TestObjectMapper testmapper;
 	

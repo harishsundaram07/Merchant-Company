@@ -16,10 +16,7 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.harishtest.merchantdetails.merchantcompany.app.AddMerchant;
-import com.harishtest.merchantdetails.merchantcompany.app.GetMerchant;
-import com.harishtest.merchantdetails.merchantcompany.app.MerchantDataService;
-import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
+import com.harishtest.merchantdetails.merchantcompany.app.MerchantWrapperservice;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponseAll;
@@ -31,7 +28,7 @@ class MerchantRestControllerTest {
 
 	
 	@Mock
-	MerchantDataService merchantdataservice;
+	MerchantWrapperservice merchantwrapperservice;
 	@Autowired
 	TestObjectMapper testmapper;
 	@InjectMocks
@@ -47,7 +44,7 @@ class MerchantRestControllerTest {
 		 MockHttpServletRequest request = new MockHttpServletRequest();
 	      RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
 	      ResponseEntity<MerchantResponse> responsen=new ResponseEntity<MerchantResponse>(testmapper.Response(mid, "SUCCESS"),HttpStatus.OK);
-	      when(merchantdataservice.GetmerchantbyId(testmapper.Request(mid))).thenReturn(responsen);
+	      when(merchantwrapperservice.GetmerchantbyId(testmapper.Request(mid))).thenReturn(responsen);
 	      ResponseEntity<MerchantResponse> responsentity=service.GetmerchantbyId(testmapper.Request(mid));
 	      assertEquals(200,responsentity.getStatusCodeValue());
 	      
@@ -59,7 +56,7 @@ class MerchantRestControllerTest {
 		MockHttpServletRequest request = new MockHttpServletRequest();
 	      RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
 	      ResponseEntity<MerchantResponse> responsen=new ResponseEntity<MerchantResponse>(testmapper.Response(mid, "SUCCESS"),HttpStatus.OK);
-	      when(merchantdataservice.Addmerchant(testmapper.Request(mid))).thenReturn(responsen);
+	      when(merchantwrapperservice.Addmerchant(testmapper.Request(mid))).thenReturn(responsen);
 	      ResponseEntity<MerchantResponse> responsentity=service.Addmerchant(testmapper.Request(mid));
 	      assertEquals(200,responsentity.getStatusCodeValue());
 	      
@@ -71,7 +68,7 @@ class MerchantRestControllerTest {
 		MockHttpServletRequest request = new MockHttpServletRequest();
 	      RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
 	      ResponseEntity<MerchantResponseAll> responsen=new ResponseEntity<MerchantResponseAll>(testmapper.ResponseAll(phoneno),HttpStatus.OK);
-	      when(merchantdataservice.GetAllMerchantByPhone(phoneno)).thenReturn(responsen);
+	      when(merchantwrapperservice.GetAllMerchantByPhone(phoneno)).thenReturn(responsen);
 	      ResponseEntity<MerchantResponseAll> responsentity=service.GetAllbyphone(phoneno);
 	      assertEquals(200,responsentity.getStatusCodeValue());
 	      

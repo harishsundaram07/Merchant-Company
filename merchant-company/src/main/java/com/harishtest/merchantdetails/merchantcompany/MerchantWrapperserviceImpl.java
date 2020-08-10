@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.harishtest.merchantdetails.merchantcompany.app.AddMerchant;
 import com.harishtest.merchantdetails.merchantcompany.app.GetMerchant;
-import com.harishtest.merchantdetails.merchantcompany.app.MerchantDataService;
+import com.harishtest.merchantdetails.merchantcompany.app.MerchantWrapperservice;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Merchant;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantRequest;
@@ -19,7 +19,7 @@ import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse
 
 
 @Component
-public class MerchantDataServiceImpl implements MerchantDataService {
+public class MerchantWrapperserviceImpl implements MerchantWrapperservice {
 	
 	@Autowired
 	GetMerchant merchantservice;
