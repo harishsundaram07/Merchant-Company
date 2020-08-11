@@ -88,12 +88,11 @@
 			<plugin>
 				
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
 				<configuration>
 					<fork>true</fork>
 					<executable>/usr/lib/jvm/java-11-openjdk-amd64/bin/javac.exe</executable>
-					 <source>1.6</source>
-              				 <target>1.6</target>
+					 <source>${maven.compiler.source}</source>
+              				 <target>${maven.compiler.source}</target>
 				</configuration>
 			</plugin>
 			<plugin>
