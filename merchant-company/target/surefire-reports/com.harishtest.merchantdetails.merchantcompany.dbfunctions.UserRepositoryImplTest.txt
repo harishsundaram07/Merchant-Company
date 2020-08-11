@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.756 s - in com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.999 s <<< FAILURE! - in com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest
+com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest  Time elapsed: 0.62 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [scripts/create/droptable.sql]: DROP TABLE MERCHANTRECORDS; nested exception is org.h2.jdbc.JdbcSQLException: Table "MERCHANTRECORDS" not found; SQL statement:
+DROP TABLE MERCHANTRECORDS [42102-196]
+	at com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest.tearDownAfterClass(UserRepositoryImplTest.java:57)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Table "MERCHANTRECORDS" not found; SQL statement:
+DROP TABLE MERCHANTRECORDS [42102-196]
+	at com.harishtest.merchantdetails.merchantcompany.dbfunctions.UserRepositoryImplTest.tearDownAfterClass(UserRepositoryImplTest.java:57)
+

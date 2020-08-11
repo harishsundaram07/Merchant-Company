@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.harishtest.merchantdetails.merchantcompany.businessservice.AddMerchantdataImplTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.165 s - in com.harishtest.merchantdetails.merchantcompany.businessservice.AddMerchantdataImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.111 s - in com.harishtest.merchantdetails.merchantcompany.businessservice.AddMerchantdataImplTest
