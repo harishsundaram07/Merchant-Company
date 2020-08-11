@@ -1,4 +1,4 @@
-com\harishtest\merchantdetails\merchantcompany\MerchantDataServiceImplTest.class
+com\harishtest\merchantdetails\merchantcompany\MerchantWrapperserviceImplTest.class
 com\harishtest\merchantdetails\merchantcompany\datamapper\TestObjectMapper.class
 META-INF\spring-configuration-metadata.json
 com\harishtest\merchantdetails\merchantcompany\businessservice\GetMerchantImplTests.class

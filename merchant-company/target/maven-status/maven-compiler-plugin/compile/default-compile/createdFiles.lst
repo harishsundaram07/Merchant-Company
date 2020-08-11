@@ -6,6 +6,7 @@ com\harishtest\merchantdetails\merchantcompany\datamapper\MerchantMapper.class
 com\harishtest\merchantdetails\merchantcompany\dbfunctions\UserRepositoryImpl.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\Name.class
 com\harishtest\merchantdetails\merchantcompany\app\UserRepository.class
+com\harishtest\merchantdetails\merchantcompany\MerchantWrapperserviceImpl.class
 com\harishtest\merchantdetails\merchantcompany\app\GetMerchant.class
 com\harishtest\merchantdetails\merchantcompany\businessservice\GetMerchantImpl.class
 com\harishtest\merchantdetails\merchantcompany\datamapper\MerchantRowMapper.class
@@ -13,14 +14,13 @@ com\harishtest\merchantdetails\merchantcompany\datamodel\Bankdetails.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\Phone.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\MerchantResponse.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\MerchantDetails.class
-com\harishtest\merchantdetails\merchantcompany\MerchantDataServiceImpl.class
 com\harishtest\merchantdetails\merchantcompany\MerchantRestController.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\MerchantResponseAll.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\ResponseDetails.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\ContactDetails.class
 com\harishtest\merchantdetails\merchantcompany\app\QueryConstants.class
+com\harishtest\merchantdetails\merchantcompany\app\MerchantWrapperservice.class
 com\harishtest\merchantdetails\merchantcompany\app\AddMerchant.class
-com\harishtest\merchantdetails\merchantcompany\app\MerchantDataService.class
 com\harishtest\merchantdetails\merchantcompany\datamapper\GetMerchantRowMapper.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\Address.class
 com\harishtest\merchantdetails\merchantcompany\datamodel\Infos.class

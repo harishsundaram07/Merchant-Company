@@ -14,7 +14,6 @@ import org.springframework.http.ResponseEntity;
 
 import com.harishtest.merchantdetails.merchantcompany.app.AddMerchant;
 import com.harishtest.merchantdetails.merchantcompany.app.GetMerchant;
-import com.harishtest.merchantdetails.merchantcompany.app.MerchantWrapperservice;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.TestObjectMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse;
@@ -32,7 +31,7 @@ class MerchantWrapperserviceImplTest {
 	@Mock
 	AddMerchant addmerchant;
 	@InjectMocks
-	MerchantWrapperservice service;
+	MerchantWrapperserviceImpl service;
 	@Autowired
 	TestObjectMapper testmapper;
 	
