@@ -7,7 +7,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-@EnableConfigurationProperties
 public class MerchantCompanyStarter extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
