@@ -71,13 +71,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-dependencies</artifactId>
 			<version>1.2.3.RELEASE</version>
 			<type>pom</type>
 			<scope>import</scope>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -113,13 +113,9 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>com.google.appengine</groupId>
+				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.2.0</version>
-				<configuration>
-					<!-- <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion> -->
-					<cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
