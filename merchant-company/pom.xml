@@ -105,13 +105,9 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>appengine-maven-plugin</artifactId>
-			</plugin>
-			<!-- <plugin>
 				<groupId>com.google.appengine</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
-			</plugin> -->
+			</plugin>
 		</plugins>
 	</build>
 </project>
