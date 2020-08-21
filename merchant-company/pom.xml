@@ -81,11 +81,6 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-1.0-sdk</artifactId>
-			<version>1.9.78</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -109,6 +104,11 @@
 						<phase>integration-test</phase>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>2.2.0</version>
 			</plugin>
 			<plugin>
 				<groupId>com.google.appengine</groupId>
