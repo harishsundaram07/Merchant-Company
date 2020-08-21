@@ -109,6 +109,10 @@
 				<groupId>com.google.appengine</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>1.9.82</version>
+				<configuration>
+					<!-- <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion> -->
+					<cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
