@@ -106,13 +106,9 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>appengine-maven-plugin</artifactId>
-				<version>2.2.0</version>
-				<configuration>
-					<version>1</version>
-					<projectId>GCLOUD_CONFIG</projectId>
-				</configuration>
+				<groupId>com.google.appengine</groupId>
+				<artifactId>appengine-api-1.0-sdk</artifactId>
+				<version>1.9.81</version>
 			</plugin>
 		</plugins>
 	</build>
