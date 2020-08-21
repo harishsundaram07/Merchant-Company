@@ -107,8 +107,8 @@
 			</plugin>
 			<plugin>
 				<groupId>com.google.appengine</groupId>
-				<artifactId>appengine-api-1.0-sdk</artifactId>
-				<version>1.9.81</version>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.9.82</version>
 			</plugin>
 		</plugins>
 	</build>
