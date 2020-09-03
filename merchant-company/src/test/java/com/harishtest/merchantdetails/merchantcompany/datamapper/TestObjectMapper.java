@@ -1,8 +1,7 @@
 package com.harishtest.merchantdetails.merchantcompany.datamapper;
 
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,6 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Address;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Bankdetails;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.ContactDetails;
@@ -234,34 +232,49 @@ public class TestObjectMapper {
 		return responseall;
 		
 	}
+	@SuppressWarnings("deprecation")
 	public void MerchantResponseJson(MerchantResponse response1) throws JsonParseException, JsonMappingException, JsonProcessingException, IOException
 	{
 		
-		ObjectMapper objectMapper = new ObjectMapper();
-		String expected=objectMapper.writeValueAsString(objectMapper.readValue(new File(ResponseFileName), MerchantResponse.class));
-		assertEquals(expected,objectMapper.writeValueAsString(response1)); 	
+		/*
+		 * ObjectMapper objectMapper = new ObjectMapper(); String
+		 * expected=objectMapper.writeValueAsString(objectMapper.readValue(new
+		 * File(ResponseFileName), MerchantResponse.class));
+		 * assertEquals(expected,objectMapper.writeValueAsString(response1));
+		 */
+		assertThat(response1).isEqualToComparingFieldByFieldRecursively(Response("20201026","SUCCESS"));
+
 
 	}
+	@SuppressWarnings("deprecation")
 	public void MerchantJson(Merchant merchant1) throws JsonParseException, JsonMappingException, JsonProcessingException, IOException
 	{
-		ObjectMapper objectMapper = new ObjectMapper();
-		String expected=objectMapper.writeValueAsString(objectMapper.readValue(new File(MerchantsFileName), Merchant.class));
-		assertEquals(expected,objectMapper.writeValueAsString(merchant1)); 	
+		/*
+		 * ObjectMapper objectMapper = new ObjectMapper(); String
+		 * expected=objectMapper.writeValueAsString(objectMapper.readValue(new
+		 * File(MerchantsFileName), Merchant.class));
+		 * assertEquals(expected,objectMapper.writeValueAsString(merchant1));
+		 */
+		assertThat(merchant1).isEqualToComparingFieldByFieldRecursively(Merchants("20201026"));
 
 	}
+	@SuppressWarnings("deprecation")
 	public void MerchantReequestJson(MerchantRequest request1) throws JsonParseException, JsonMappingException, JsonProcessingException, IOException
 	{
-		ObjectMapper objectMapper = new ObjectMapper();
+		/*ObjectMapper objectMapper = new ObjectMapper();
 		String expected=objectMapper.writeValueAsString(objectMapper.readValue(new File(RequestFileName), MerchantRequest.class));
-		assertEquals(expected,objectMapper.writeValueAsString(request1)); 	
+		assertEquals(expected,objectMapper.writeValueAsString(request1)); */
+		assertThat(request1).isEqualToComparingFieldByFieldRecursively(Request("20201026"));
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public void ResponseAllJson(MerchantResponseAll responseall1) throws JsonParseException, JsonMappingException, JsonProcessingException, IOException
 	{
-		ObjectMapper objectMapper = new ObjectMapper();
-		String expected=objectMapper.writeValueAsString(objectMapper.readValue(new File(ResponseAllFileName), MerchantResponseAll.class));
-		assertEquals(expected,objectMapper.writeValueAsString(responseall1)); 	
+		//ObjectMapper objectMapper = new ObjectMapper();
+		//String expected=objectMapper.writeValueAsString(objectMapper.readValue(new File(ResponseAllFileName), MerchantResponseAll.class));
+		assertThat(responseall1).isEqualToComparingFieldByFieldRecursively(ResponseAll("9326715657"));
+		//assertEquals(expected,objectMapper.writeValueAsString(responseall1)); 	
 
 	}
 	
