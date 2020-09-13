@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.harishtest.merchantdetails.merchantcompany.app.AddMerchant;
+import com.harishtest.merchantdetails.merchantcompany.app.GetMerchant;
 import com.harishtest.merchantdetails.merchantcompany.app.UserRepository;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Merchant;
@@ -20,17 +21,21 @@ public class AddMerchantdataImpl implements AddMerchant {
 	UserRepository userrepository;
 	@Autowired
 	MerchantMapper mapper;
+	@Autowired
+	GetMerchant getmerchant;
+
 
 	@Override
 	public MerchantResponse AddMerchantdata(MerchantRequest merchreq) {
 
 		MerchantResponse resp = new MerchantResponse();
 		resp = ValidationCheck(merchreq);
-		
-		  if(resp.getResponsedetails().getStatus().equalsIgnoreCase("SUCCESS")) {
-		  
-		 String
-		  mid = Year.now().toString() + String.valueOf(userrepository.SeqID());
+		if(resp.getResponsedetails().getStatus().equalsIgnoreCase("SUCCESS"))
+		resp=getmerchant.GetIFSCDetails(merchreq);
+		else
+			return resp;
+		if(resp.getResponsedetails().getStatus().equalsIgnoreCase("SUCCESS")) {
+		 String mid = Year.now().toString() + String.valueOf(userrepository.SeqID());
 		 merchreq.getMerchant().getMerchantdetails().setMerchantid(mid);
 		int update = userrepository.InsertMerchant(merchreq);
 		MerchantResponse response = new MerchantResponse();

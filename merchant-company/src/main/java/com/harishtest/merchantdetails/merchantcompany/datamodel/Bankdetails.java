@@ -1,11 +1,17 @@
 package com.harishtest.merchantdetails.merchantcompany.datamodel;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Bankdetails {
 	
 	private String Bankname;
 	private String Accountnumber;
 	private String IFSC;
 	private Name AccountHolderName;
+	@JsonProperty("MICRCode")
+	private String micrcode;
+	@JsonProperty("BankAddress")
+	private Bankaddress bankaddress;
 	public String getBankname() {
 		return Bankname;
 	}
@@ -29,6 +35,18 @@ public class Bankdetails {
 	}
 	public void setAccountHolderName(Name accountHolderName) {
 		AccountHolderName = accountHolderName;
+	}
+	public String getMicrcode() {
+		return micrcode;
+	}
+	public void setMicrcode(String micrcode) {
+		this.micrcode = micrcode;
+	}
+	public Bankaddress getBankaddress() {
+		return bankaddress;
+	}
+	public void setBankaddress(Bankaddress bankaddress) {
+		this.bankaddress = bankaddress;
 	}
 
 }

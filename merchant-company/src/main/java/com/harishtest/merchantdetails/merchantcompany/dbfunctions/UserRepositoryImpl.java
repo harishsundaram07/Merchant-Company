@@ -16,7 +16,6 @@ import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamapper.MerchantRowMapper;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Merchant;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantRequest;
-import com.harishtest.merchantdetails.merchantcompany.datamodel.MerchantResponse;
 import com.harishtest.merchantdetails.merchantcompany.datamodel.Phone;
 
 @Component
@@ -149,7 +148,7 @@ public class UserRepositoryImpl implements UserRepository {
 		response=jdbctemplate.query(QueryConstants.QueryAllbyphone, rowMapper, phone);	
 		return response;
 	}
-
+	
 	
 
 

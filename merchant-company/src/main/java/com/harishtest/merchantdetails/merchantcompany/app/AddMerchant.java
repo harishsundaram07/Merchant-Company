@@ -7,6 +7,7 @@ public interface AddMerchant {
 	public MerchantResponse AddMerchantdata(MerchantRequest merchreq);
 	public MerchantResponse ValidationCheck(MerchantRequest merchreq);
 	
+	
 
 
 }
