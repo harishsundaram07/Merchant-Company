@@ -27,6 +27,7 @@ public  class GetMerchantImpl implements GetMerchant {
 	UserRepository userrepository;	
 	@Autowired
 	MerchantDataService dataservice;
+
 	
 	
 
